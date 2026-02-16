@@ -1,0 +1,83 @@
+You are a senior product engineer + brand designer. Build a production-grade landing page for an Iranian ride-sharing startup called "شوفر (shoffer)".
+
+Goal:
+Create a high-converting, ultra-modern, unicorn-style landing page that feels premium, bold, and startup-grade (similar quality to Stripe / Linear / Notion-style modern SaaS landing experiences, adapted for Persian audience and RTL).
+
+Tech stack (strict):
+- Next.js (latest, App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+Language and direction:
+- Primary language: Persian (fa-IR), fully RTL
+- Keep some micro labels in English only if it improves brand feel
+- Tone: professional, confident, modern, trustworthy
+
+Brand context:
+- Product: Smart intercity carpooling platform connecting drivers and passengers
+- Core values: safety, affordability, speed, trust
+- Main CTA: دانلود اپ / شروع رایگان
+- Secondary CTA: مشاهده نحوه کار
+
+Design requirements:
+- Unique, premium visual direction (not generic template)
+- Strong typography hierarchy, excellent spacing, intentional grid system
+- Color system with CSS variables/Tailwind theme tokens
+- Rich background treatment (gradients + subtle shapes/noise), not flat white
+- Bento-style feature layout
+- Clean glassmorphism/card surfaces where appropriate
+- Motion that feels meaningful: staggered reveals, hero entrance, hover states, scroll-triggered animations (Framer Motion)
+- Mobile-first and fully responsive (320px to 2xl)
+- Accessible contrast and keyboard-friendly interactions
+
+Page sections:
+1) Sticky Header (logo, nav anchors, CTA button)
+2) Hero (big value prop, trust badge, 2 CTAs, product mock card)
+3) Social Proof (stats + partner/client logos placeholders)
+4) Features (bento grid, 6 feature cards)
+5) How It Works (3 clear steps)
+6) Trust/Safety section (identity verification, rating, support)
+7) Testimonials (3 realistic Persian testimonials)
+8) FAQ (accordion, 5 items)
+9) Final CTA band (download options: Android / iOS / Web)
+10) Footer (legal links, contact, social placeholders)
+
+SEO and technical requirements:
+- Proper metadata in app router (`title`, `description`, `keywords`, `openGraph`, `twitter`, `alternates.canonical`)
+- Semantic HTML structure (header/main/section/footer, one H1)
+- JSON-LD schemas:
+  - SoftwareApplication
+  - FAQPage
+  - Organization
+- robots.txt and sitemap.xml
+- Fast loading and optimized layout shift behavior
+- Use next/font for Persian-friendly font (e.g., Vazirmatn)
+- Clean component architecture and reusable sections
+
+Code quality:
+- Create reusable typed components in a clear folder structure
+- No inline messy styles; use Tailwind utility + small reusable patterns
+- Keep code readable and production-ready
+- Add concise comments only where necessary
+- No fake libraries beyond requested stack
+
+Deliverables:
+- Full Next.js project code (App Router)
+- `app/page.tsx` assembled with reusable section components
+- `components/landing/*` section components
+- `app/layout.tsx` with RTL and global metadata base
+- `app/globals.css` with design tokens
+- Framer Motion integration across key sections
+- Ready to run with:
+  - npm install
+  - npm run dev
+
+Conversion optimization:
+- Keep CTAs visible and repeated strategically
+- Copy should be benefit-driven and clear
+- Include urgency/credibility microcopy where appropriate
+
+Important:
+- Do not generate a generic bootstrap-like page.
+- The output must look premium, modern, and startup-investor-ready.
